@@ -1,0 +1,12 @@
+# updating for latest jupyter book version
+
+format: jb-book
+# ===== Main Landing Page ========================================
+root: home
+
+# ===== Getting started ==========================================
+
+chapters:
+- file: docs/1-100/intro
+  sections:
+  - file: docs/1-100/1
