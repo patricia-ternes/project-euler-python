@@ -5,8 +5,6 @@ on:
   push:
     branches:
     - main
-    paths:
-    - book/**
 
 # This job installs dependencies, builds the book, and pushes it to `gh-pages`
 jobs:
@@ -28,7 +26,7 @@ jobs:
     # Build the book
     - name: Build the book
       run: |
-        jupyter-book build .
+        jupyter-book build ./book/
 
     # Push the book's HTML to github-pages
     - name: GitHub Pages action
