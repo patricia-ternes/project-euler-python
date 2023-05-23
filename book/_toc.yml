@@ -10,3 +10,4 @@ chapters:
 - file: docs/1-100/intro
   sections:
   - file: docs/1-100/1
+  - file: docs/1-100/2
