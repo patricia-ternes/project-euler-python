@@ -1,4 +1,4 @@
-# Project Euler - Python Solutions1
+# Project Euler - Python Solutions
 
 This book is an environment for testing and share my solutions for the problems provided by [Project Euler][euler-url].
 
