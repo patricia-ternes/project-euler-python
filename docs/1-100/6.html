@@ -501,7 +501,12 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Performance of first solution:</span>
-<span class="o">%</span><span class="k">timeit</span> problem6(100000000)
+<span class="o">%</span><span class="k">timeit</span> problem6(1000000)
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>351 ms ± 288 µs per loop (mean ± std. dev. of 7 runs, 1 loop each)
 </pre></div>
 </div>
 </div>
@@ -533,12 +538,12 @@ is perform both operations in just one loop:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Performance of second solution</span>
-<span class="o">%</span><span class="k">timeit</span> problem6(100000000)
+<span class="o">%</span><span class="k">timeit</span> problem6(1000000)
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5.14 s ± 198 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>112 ms ± 202 µs per loop (mean ± std. dev. of 7 runs, 10 loops each)
 </pre></div>
 </div>
 </div>
@@ -572,12 +577,12 @@ the <a class="reference external" href="https://en.wikipedia.org/wiki/1_%2B_2_%2
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Performance of third solution</span>
-<span class="o">%</span><span class="k">timeit</span> problem6(100000000)
+<span class="o">%</span><span class="k">timeit</span> problem6(1000000)
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>235 ns ± 4.71 ns per loop (mean ± std. dev. of 7 runs, 1,000,000 loops each)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>572 ns ± 7.54 ns per loop (mean ± std. dev. of 7 runs, 1,000,000 loops each)
 </pre></div>
 </div>
 </div>
