@@ -481,12 +481,7 @@ document.write(`
 <p>See my solution bellow</p>
 </div>
 <p>Using list comprehension:</p>
-<div class="cell tag_hide-input tag_remove-output docutils container">
-<details class="hide above-input">
-<summary aria-label="Toggle hidden content">
-<span class="collapsed">Show code cell source</span>
-<span class="expanded">Hide code cell source</span>
-</summary>
+<div class="cell tag_remove-output docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">problem6</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
     <span class="n">sq_sum</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([</span><span class="n">i</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">)])</span>
@@ -498,7 +493,6 @@ document.write(`
 </pre></div>
 </div>
 </div>
-</details>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -508,19 +502,14 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>436 ms ± 2.98 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>365 ms ± 366 µs per loop (mean ± std. dev. of 7 runs, 1 loop each)
 </pre></div>
 </div>
 </div>
 </div>
 <p>In the solution above I used 2 list comprehension over the same interval, so a faster solution
 is perform both operations in just one loop:</p>
-<div class="cell tag_hide-input tag_remove-output docutils container">
-<details class="hide above-input">
-<summary aria-label="Toggle hidden content">
-<span class="collapsed">Show code cell source</span>
-<span class="expanded">Hide code cell source</span>
-</summary>
+<div class="cell tag_remove-output docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">problem6</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
     <span class="n">sq_sum</span> <span class="o">=</span> <span class="mi">0</span>
@@ -535,7 +524,6 @@ is perform both operations in just one loop:</p>
 </pre></div>
 </div>
 </div>
-</details>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -545,7 +533,7 @@ is perform both operations in just one loop:</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>153 ms ± 694 µs per loop (mean ± std. dev. of 7 runs, 10 loops each)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>131 ms ± 281 µs per loop (mean ± std. dev. of 7 runs, 10 loops each)
 </pre></div>
 </div>
 </div>
@@ -557,12 +545,7 @@ the <a class="reference external" href="https://en.wikipedia.org/wiki/1_%2B_2_%2
 <p>and, <a class="reference external" href="https://en.wikipedia.org/wiki/Square_pyramidal_number">the sum of squared natural numbers is</a>:</p>
 <div class="math notranslate nohighlight">
 \[\sum_{k=1}^N k^2 = \frac{N(N+1)(2N+1)}{6}\]</div>
-<div class="cell tag_hide-input tag_remove-output docutils container">
-<details class="hide above-input">
-<summary aria-label="Toggle hidden content">
-<span class="collapsed">Show code cell source</span>
-<span class="expanded">Hide code cell source</span>
-</summary>
+<div class="cell tag_remove-output docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">problem6</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
     <span class="n">sum_sq</span> <span class="o">=</span> <span class="n">N</span><span class="o">*</span><span class="p">(</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">N</span><span class="o">*</span><span class="p">(</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">//</span><span class="mi">4</span>
@@ -574,7 +557,6 @@ the <a class="reference external" href="https://en.wikipedia.org/wiki/1_%2B_2_%2
 </pre></div>
 </div>
 </div>
-</details>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -584,7 +566,7 @@ the <a class="reference external" href="https://en.wikipedia.org/wiki/1_%2B_2_%2
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>788 ns ± 4.07 ns per loop (mean ± std. dev. of 7 runs, 1,000,000 loops each)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>647 ns ± 0.0977 ns per loop (mean ± std. dev. of 7 runs, 1,000,000 loops each)
 </pre></div>
 </div>
 </div>
