@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>4: Largest palindrome product &#8212; Project Euler - Python Solutions</title>
+    <title>8: Largest Product in a Series &#8212; Project Euler - Python Solutions</title>
   
   
   
@@ -61,13 +61,14 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/1-100/4';</script>
-    <link rel="canonical" href="https://patricia-ternes.github.io/project-euler-python/docs/1-100/4.html" />
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/1-100/8';</script>
+    <link rel="canonical" href="https://patricia-ternes.github.io/project-euler-python/docs/1-100/8.html" />
     <link rel="shortcut icon" href="../../_static/favicon-32x32.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="5: Smallest multiple" href="5.html" />
-    <link rel="prev" title="3: Largest prime factor" href="3.html" />
+    <link rel="prev" title="7: 10001st Prime" href="7.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -163,11 +164,11 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="1.html">1: Multiples of 3 or 5</a></li>
 <li class="toctree-l2"><a class="reference internal" href="2.html">2: Even Fibonacci numbers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="3.html">3: Largest prime factor</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">4: Largest palindrome product</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4.html">4: Largest palindrome product</a></li>
 <li class="toctree-l2"><a class="reference internal" href="5.html">5: Smallest multiple</a></li>
 <li class="toctree-l2"><a class="reference internal" href="6.html">6: Sum square difference</a></li>
 <li class="toctree-l2"><a class="reference internal" href="7.html">7: 10001st Prime</a></li>
-<li class="toctree-l2"><a class="reference internal" href="8.html">8: Largest Product in a Series</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">8: Largest Product in a Series</a></li>
 </ul>
 </li>
 </ul>
@@ -224,7 +225,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://mybinder.org/v2/gh/patricia-ternes/project-euler-python/main?urlpath=tree/book/docs/1-100/4.ipynb" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/patricia-ternes/project-euler-python/main?urlpath=tree/book/docs/1-100/8.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onBinder"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -242,7 +243,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://colab.research.google.com/github/patricia-ternes/project-euler-python/blob/main/book/docs/1-100/4.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/patricia-ternes/project-euler-python/blob/main/book/docs/1-100/8.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onColab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -290,7 +291,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/patricia-ternes/project-euler-python/edit/main/book/docs/1-100/4.ipynb" target="_blank"
+      <li><a href="https://github.com/patricia-ternes/project-euler-python/edit/main/book/docs/1-100/8.ipynb" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -307,7 +308,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/patricia-ternes/project-euler-python/issues/new?title=Issue%20on%20page%20%2Fdocs/1-100/4.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/patricia-ternes/project-euler-python/issues/new?title=Issue%20on%20page%20%2Fdocs/1-100/8.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -337,7 +338,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/docs/1-100/4.ipynb" target="_blank"
+      <li><a href="../../_sources/docs/1-100/8.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -419,7 +420,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>4: Largest palindrome product</h1>
+    <h1>8: Largest Product in a Series</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -442,19 +443,42 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="largest-palindrome-product">
-<h1>4: Largest palindrome product<a class="headerlink" href="#largest-palindrome-product" title="Permalink to this heading">#</a></h1>
-<p>Description</p>
-<p>A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.</p>
-<p>Find the largest palindrome made from the product of two 3-digit numbers.</p>
-<p><a class="reference external" href="https://projecteuler.net/problem=4">Submit your answer</a></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="largest-product-in-a-series">
+<h1>8: Largest Product in a Series<a class="headerlink" href="#largest-product-in-a-series" title="Permalink to this heading">#</a></h1>
+<p>The four adjacent digits in the 1000-digit number that have the greatest product are <span class="math notranslate nohighlight">\(9\times 9\times 8\times 9\times = 5832\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+73167176531330624919225119674426574742355349194934\\
+96983520312774506326239578318016984801869478851843\\
+85861560789112949495459501737958331952853208805511\\
+12540698747158523863050715693290963295227443043557\\
+66896648950445244523161731856403098711121722383113\\
+62229893423380308135336276614282806444486645238749\\
+30358907296290491560440772390713810515859307960866\\
+70172427121883998797908792274921901699720888093776\\
+65727333001053367881220235421809751254540594752243\\
+52584907711670556013604839586446706324415722155397\\
+53697817977846174064955149290862569321978468622482\\
+83972241375657056057490261407972968652414535100474\\
+82166370484403199890008895243450658541227588666881\\
+16427171479924442928230863465674813919123162824586\\
+17866458359124566529476545682848912883142607690042\\
+24219022671055626321111109370544217506941658960408\\
+07198403850962455444362981230987879927244284909188\\
+84580156166097919133875499200524063689912560717606\\
+05886116467109405077541002256983155200055935729725\\
+71636269561882670428252483600823257530420752963450
+\end{split}\]</div>
+<p>Find the thirteen adjacent digits in the 1000-digit number that have the greatest product.
+What is the value of this product?</p>
+<p><a class="reference external" href="https://projecteuler.net/problem=8">Submit your answer</a></p>
 <section id="your-solution">
 <h2>Your Solution<a class="headerlink" href="#your-solution" title="Permalink to this heading">#</a></h2>
 <p>Lunch this notebook and try to create your own solution!</p>
 <p>Tip: look for the launch button (🚀) in the top right corner!</p>
 <div class="cell tag_remove-output docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">problem4</span><span class="p">(</span><span class="n">N</span><span class="p">):</span> <span class="c1"># N = number of digits</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">problem8</span><span class="p">(</span><span class="n">L</span><span class="p">,</span> <span class="n">N</span><span class="p">):</span>  <span class="c1"># L = long number, N = number of adjacent digits</span>
     <span class="c1"># Try your solution here</span>
     <span class="k">return</span> <span class="n">solution</span>
 
@@ -462,7 +486,7 @@ document.write(`
 <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">(</span><span class="n">argv</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">],</span> <span class="n">verbosity</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">exit</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 <span class="c1"># Printing Project Euler Solution</span>
-<span class="c1"># print(problem4(3))</span>
+<span class="c1"># print(problem8(13))</span>
 </pre></div>
 </div>
 </div>
@@ -474,19 +498,32 @@ document.write(`
 <p class="admonition-title">Spoiler Alert!!</p>
 <p>See my solution bellow</p>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">long_digit</span> <span class="o">=</span> <span class="mi">7316717653133062491922511967442657474235534919493496983520312774506326239578318016984801869478851843858615607891129494954595017379583319528532088055111254069874715852386305071569329096329522744304355766896648950445244523161731856403098711121722383113622298934233803081353362766142828064444866452387493035890729629049156044077239071381051585930796086670172427121883998797908792274921901699720888093776657273330010533678812202354218097512545405947522435258490771167055601360483958644670632441572215539753697817977846174064955149290862569321978468622482839722413756570560574902614079729686524145351004748216637048440319989000889524345065854122758866688116427171479924442928230863465674813919123162824586178664583591245665294765456828489128831426076900422421902267105562632111110937054421750694165896040807198403850962455444362981230987879927244284909188845801561660979191338754992005240636899125607176060588611646710940507754100225698315520005593572972571636269561882670428252483600823257530420752963450</span>
+</pre></div>
+</div>
+</div>
+</div>
 <div class="cell tag_remove-output docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Note: this solution does not scale well! Keep N&lt;=4</span>
-<span class="k">def</span> <span class="nf">problem4</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
-    <span class="n">palindromic</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="n">N</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="o">**</span><span class="p">(</span><span class="n">N</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
-        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="n">N</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
-            <span class="n">product</span> <span class="o">=</span> <span class="n">i</span><span class="o">*</span><span class="n">j</span>
-            <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">product</span><span class="p">)</span> <span class="o">==</span> <span class="nb">str</span><span class="p">(</span><span class="n">product</span><span class="p">)[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
-                <span class="k">if</span> <span class="n">product</span> <span class="o">&gt;</span> <span class="n">palindromic</span><span class="p">:</span>
-                    <span class="n">palindromic</span> <span class="o">=</span> <span class="n">product</span>
-                    <span class="k">break</span>
-    <span class="k">return</span> <span class="n">palindromic</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">problem8</span><span class="p">(</span><span class="n">L</span><span class="p">,</span> <span class="n">N</span><span class="p">):</span>  <span class="c1"># L = long number, N = number of adjacent digits</span>
+    <span class="n">long_string</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
+    <span class="n">greatest</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">M</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">long_string</span><span class="p">)</span> <span class="o">-</span> <span class="n">N</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">M</span><span class="p">):</span>
+        <span class="c1"># get a chunk of the number</span>
+        <span class="n">short</span> <span class="o">=</span> <span class="n">long_string</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="n">N</span><span class="p">]</span>
+
+        <span class="c1"># calculate the product</span>
+        <span class="n">product</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">short</span><span class="p">:</span>
+            <span class="n">product</span> <span class="o">*=</span> <span class="nb">int</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+
+        <span class="c1"># keep the largest value</span>
+        <span class="n">greatest</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">product</span><span class="p">,</span> <span class="n">greatest</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">greatest</span>
 
 <span class="c1"># Testing</span>
 <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">(</span><span class="n">argv</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">],</span> <span class="n">verbosity</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">exit</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -494,16 +531,16 @@ document.write(`
 </div>
 </div>
 </div>
-<p>The largest palindrome made from the product of two 3-digit numbers is</p>
+<p>Add main question:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Printing Project Euler Solution</span>
-<span class="n">problem4</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">problem8</span><span class="p">(</span><span class="n">long_digit</span><span class="p">,</span> <span class="mi">13</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>906609
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>23514624000
 </pre></div>
 </div>
 </div>
@@ -543,22 +580,13 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="3.html"
+       href="7.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">3: Largest prime factor</p>
+        <p class="prev-next-title">7: 10001st Prime</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="5.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">5: Smallest multiple</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div></div>
   
